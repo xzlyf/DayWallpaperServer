@@ -38,6 +38,8 @@ public class Login extends HttpServlet{
 		response.getWriter().println(new JSONObject(map));
 	}
 	protected void doPost(HttpServletRequest request,HttpServletResponse response)throws ServerException,IOException{
+		//«Î«Ûµÿ÷∑£∫localhost:8080/DayWallpaper/login?
+
 		request.setCharacterEncoding("utf-8");
 		String name = request.getParameter("name");
 		String psw = request.getParameter("psw");
